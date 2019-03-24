@@ -38,7 +38,7 @@
 *,
 ::after,
 ::before {
-    box-sizing: border-box
+    /*box-sizing: border-box*/
 }
 
 html {
@@ -64,12 +64,12 @@ section {
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff
+    background-color: #fff;
 }
 
 [tabindex="-1"]:focus {
@@ -98,10 +98,15 @@ h6 {
 }
 
 p {
-    margin-top: 0;
+    /*margin-top: 0;*/
     /*margin-bottom: 1rem*/
     text-align: justify;
     font-family: "Natural Marker";
+}
+
+p,
+.cent{
+	text-align: center;
 }
 
 
@@ -5024,7 +5029,7 @@ input[type=submit].btn-block {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 0.5rem;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.30);
     margin-left: 10%;
     width: 80%;
 }
