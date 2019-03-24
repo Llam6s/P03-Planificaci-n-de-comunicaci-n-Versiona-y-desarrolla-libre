@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 90%;
 }
 
 .site-header {
@@ -34,6 +34,25 @@ body {
 .site-header a:hover {
     color: #fff;
     text-decoration: none;
+}
+
+@media(max-width: 1220px) {
+    .site-header a {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 900px) {
+    .site-header a {
+        font-size: 0.9rem;
+    }
+}
+
+h5,
+.tituloLen {
+    font-family: "Natural Marker";
+    font-size: 1rem;
+    color: #6c757d;
 }
 
 .ini1 {
@@ -61,15 +80,63 @@ body {
 
 
 .ini3 {
-    color: #685206;
+    color: #ffffff;
     font-size: 14px;
     line-height: 24px;
     margin: 0 0 24px;
     text-align: justify;
     text-justify: inter-word;
+    font-family: "Natural Marker";
 }
 
-.infop{
+.miinfo {
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 24px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: "Natural Marker";
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background-color: #000000;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-github {
+  background: #000000;
+  color: white;
+}
+
+.miinfo2 {
+    color: #999999;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: justify;
+    font-family: "Natural Marker";
+}
+
+.infop {
     background-color: #04040563;
     margin-left: 1em;
     margin-top: 0.1rem;
@@ -78,9 +145,19 @@ body {
     border-radius: calc(.25rem - 1px);
 }
 
-.mifoto{
-	width: 33%;
-    margin-left: 0.1rem;
+.infop2 {
+    background-color: #04040563;
+    margin-left: 0.1em;
+    margin-right: 0.1rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    padding: 1rem;
+    border-radius: calc(.25rem - 1px);
+}
+
+.mifoto {
+    width: 32%;
+    margin-left: 0.2rem;
     margin-top: 0.1rem;
     margin-bottom: 0.1rem;
 }
@@ -126,6 +203,7 @@ body {
         -ms-flex: 1;
         flex: 1;
     }
+
 }
 
 
